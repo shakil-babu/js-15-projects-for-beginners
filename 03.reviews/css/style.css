@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #eee;
+    font-family: monospace;
+}
+
+.main-area{
+    text-align: center;
+    padding: 100px 0;
+}
+
+
+/* =========== underline box ============= */
+.underline-box{
+    padding-bottom: 35px;
+}
+.underline-box h1{
+    text-transform: uppercase;
+    font-size: 35px;
+    margin: 0;
+}
+.underline{
+    height: 3px;
+    width: 15%;
+    background-color: blue;
+    margin: auto;
+}
+
+
+/* =============== show review area =============== */
+.show-review-area{
+    background-color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 50%;
+    margin: auto;
+}
+
+.review-content h5, .review-content h6{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.review-content h5{
+    font-size: 20px;
+    letter-spacing: 3.4px;
+    margin-top: 20px;
+}
+.review-content h6{
+    font-size: 16px;
+    color: rgba(0, 0, 255, 0.699);
+}
+.review-content p{
+    font-size: 16px;
+    font-family: monospace;
+}
+
+/* ================= btn area =============== */
+
+.btn-flex{
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+.btn-flex button{
+    margin-right: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    padding: 8px 30px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+}
+
+#random{
+    outline: none;
+    border: none;
+    padding: 8px 30px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+/* ============== responsive =========== */
+
+@media screen and (max-width:768px){
+    .show-review-area{
+        width: 80%;
+    }
+    .underline-box h1{
+        font-size: 30px;
+    }
+}

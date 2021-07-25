@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(14, 14, 201, 0.678);
+}
+
+.main-area{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-area{
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    width: 50%;
+}
+
+.hero-area h1{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.btn{
+    outline: none;
+    border: none;
+    background-color: rgba(14, 14, 201, 0.678);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: monospace;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(12, 12, 185);
+}
+
+/* ========================== modal area =========== */
+.modal-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.493);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-display{
+    display: none;
+}
+.modal-body{
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    width: 50%;
+}
+.modal-body a{
+    float: right;
+    background-color: red;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+
+@media screen and (max-width:768px) {
+    .hero-area{
+        width: 80%;
+    }
+    .main-area{
+        height: 50vh;
+    }
+}
+

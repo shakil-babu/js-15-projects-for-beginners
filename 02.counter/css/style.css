@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-area{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-area h1, .main-area h2{
+    margin: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.btn-flex{
+    display: flex;
+    margin-top: 10px;
+}
+
+.btn{
+    border: none;
+    outline:none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.increase-btn{
+    background-color: green;
+}
+.reset-btn{
+    background-color: red;
+}
+.decrease-btn{
+    background-color: yellowgreen;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .main-area {
+        height: 40vh;
+    }
+}
