@@ -1,22 +1,108 @@
- .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+/* ============= default styles ========== */
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(4, 4, 146, 0.623);
+  font-family: monospace;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+/* ============== main area ============== */
+.main-area{
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+}
+.main-area h1{
+  text-transform: uppercase;
+  font-size: 35px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+
+/* ========== accordion content ============== */
+.accordion-content{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  transition: 0.4s;
+}
+.accordion-box{
+  border-radius: 10px;
+}
+
+
+/* ============ accordion title box =============== */
+.accordion-title{
+  background-color: #000;
+  color: #fff;
+  padding: 12px;
+  display: flex;
+  border-radius: 10px;
+  cursor: pointer;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.accordion-title h4{
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+
+
+/* =========== panel body =========== */
+.panel-body p{
+  padding: 10px;
+}
+
+
+/* hide content */
+.panel-body{
+  display: none;
+}
+.minus-icon{
+  display: none;
+}
+
+/*  show content with the help of (.show-content) className */
+.show-content .panel-body{
+  display: block;
+}
+.show-content .minus-icon{
+  display: block;
+}
+.show-content .plus-icon{
+  display: none;
+}
+
+
+
+/* =============== responsive  =========== */
+  @media screen and (max-width:768px) {
+    .main-area{
+      width: 80%;
+      height: 50vh;
+    }
+    .main-area h1{
+      font-size: 22px;
+    }
   }
-  
-  .active, .accordion:hover {
-    background-color: #ccc;
-  }
-  
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-  } 
+
+
+
+  /* =============================================================== end ========================================== */
