@@ -1,0 +1,93 @@
+/* default style */
+body{
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+/* bar area here */
+.bar-area{
+    padding: 20px;
+}
+.bar-area .bar-icon{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* sidebar main area */
+
+.sidebar-whole-area{
+    display: none;
+}
+
+.sidebar-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    background-color: #fff;
+    width: 300px;
+    text-align: center;
+}
+
+/* sidebar title area */
+.sidebar-title h4{
+    text-transform: uppercase;
+    font-size: 25px;
+    
+}
+
+/* sidebar links area */
+.sidebar-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+/* sidebar icons area */
+.sidebar-icons{
+    display: flex;
+    padding-top:40px;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-icons p {
+    margin-right: 10px;
+}
+.sidebar-icons p i{
+    font-size: 25px;
+}
+
+.sidebar-links a:hover{
+    background-color: #eee;
+}
+
+/* delete icon style */
+#delete-btn{
+    font-size: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    color: red;
+}
+
+
+/* responsive */
+
+@media screen and (max-width:576px) {
+    .sidebar-area{
+        width: 100%;
+    }
+}
