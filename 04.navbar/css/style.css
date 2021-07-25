@@ -1,0 +1,122 @@
+/* default style */
+body{
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ===== nav area ===== */
+.nav-area{
+    background-color: #fff;
+    padding: 20px 12px;
+    box-shadow: 0 0 0.5em 0;
+}
+
+/* ========= container ======== */
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+
+/* ====== nav content area ======== */
+.nav-content, .nav-body{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-content h4{
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.main{
+    display: none;
+}
+
+
+/* ==== nav links area ======== */
+.nav-links{
+    display: flex;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 14px;
+    text-transform: uppercase;
+}
+
+/* ============ nav icons area ========= */
+.icons{
+    display: flex;
+}
+.icons p{
+    margin-right: 12px;
+}
+.icons p i{
+    font-size: 22px;
+}
+
+
+/* =============== icon bar ============= */
+.bar-icon{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* ===================== mobile nav style ============== */
+.mobile-nav{
+    background-color: #eee;
+    padding: 14px;
+    margin-top: 10px;
+    display: none;
+}
+.mobile-nav-links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.mobile-nav-links a{
+    text-decoration: none;
+    color: #000;
+    margin-top: 14px;
+    text-transform: uppercase;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.show-content{
+    display: block;
+}
+/* =================== responsive ============== */
+@media screen and (max-width:768px) {
+    .nav-body{
+        display: none;
+    }
+    .main{
+        display: block;
+    }
+    .bar-icon{
+        display: block;
+    }
+
+    
+}
+
+@media screen and (min-width: 768px){
+    .mobile-nav{
+        display: none;
+    }
+}
